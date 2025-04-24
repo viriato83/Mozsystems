@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://viriato83.github.io/Mozsystems/sitemap.xml
