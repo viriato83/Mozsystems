@@ -6,7 +6,7 @@ import Contact from "./pages/Contactos";
 
 export default function AppRouter() {
   return (
-    <Router >
+    <Router basename="/Mozsystems" >
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/servicos" element={<Servicos></Servicos>}></Route>

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/viriato83/Mozsystems/",
   "name": "mozsystemsweb",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,7 @@
     "bootstrap": "^5.3.5",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.6.3",
+    "gh-pages": "^6.3.0",
     "last": "^1.1.0",
     "lucide-react": "^0.487.0",
     "mozsystemsweb": "file:",
@@ -24,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
