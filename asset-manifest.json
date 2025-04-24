@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/viriato83/Mozsystems/static/css/main.8e848433.css",
+    "main.js": "/viriato83/Mozsystems/static/js/main.59f5d721.js",
+    "static/js/453.05316cba.chunk.js": "/viriato83/Mozsystems/static/js/453.05316cba.chunk.js",
+    "static/media/banner.png": "/viriato83/Mozsystems/static/media/banner.3b1dd67545e751c37a93.png",
+    "static/media/Captura de ecrã 2025-04-04 165147.png": "/viriato83/Mozsystems/static/media/Captura de ecrã 2025-04-04 165147.1c277e9097317e61128c.png",
+    "static/media/seo.png": "/viriato83/Mozsystems/static/media/seo.796d7c25f5835f6072b5.png",
+    "static/media/syt.png": "/viriato83/Mozsystems/static/media/syt.1a80552511d9faef8f9f.png",
+    "static/media/web.png": "/viriato83/Mozsystems/static/media/web.b5e65f856336785bf6fd.png",
+    "static/media/Captura de ecrã 2025-04-04 134251.png": "/viriato83/Mozsystems/static/media/Captura de ecrã 2025-04-04 134251.e82e5831f45d94463e43.png",
+    "static/media/Captura de ecrã 2025-04-04 134150.png": "/viriato83/Mozsystems/static/media/Captura de ecrã 2025-04-04 134150.12fcec452d79f721add5.png",
+    "static/media/Captura de ecrã 2025-04-04 134132.png": "/viriato83/Mozsystems/static/media/Captura de ecrã 2025-04-04 134132.97af2a6be72913b7808a.png",
+    "index.html": "/viriato83/Mozsystems/index.html",
+    "main.8e848433.css.map": "/viriato83/Mozsystems/static/css/main.8e848433.css.map",
+    "main.59f5d721.js.map": "/viriato83/Mozsystems/static/js/main.59f5d721.js.map",
+    "453.05316cba.chunk.js.map": "/viriato83/Mozsystems/static/js/453.05316cba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e848433.css",
+    "static/js/main.59f5d721.js"
+  ]
+}
