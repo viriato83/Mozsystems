@@ -1,13 +1,757 @@
-body {
+/* ✅ Reset básico */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box !important;
+   color:#f0f0f0;
+}
+a{
+  text-decoration: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color:    #ffffff !important;
+
 }
+html, body {
+
+  font-family: Arial, sans-serif;
+  color:white;
+  background-color: #06131e !important;
+  line-height: 1.6;
+
+  overflow-x: hidden; /* Evita barra de rolagem horizontal */
+}
+
+/* ✅ Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+/* ✅ Cabeçalho */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  #06131e00;        /* Azul-marinho */
+  color:#fd6532;
+  padding: 0px 40px;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  transition: all 0.3s ease;
+  box-shadow: none; /* Sem sombra inicialmente */
+}
+
+.header-container.scrolled {
+  background: rgb(6, 19, 30); /* Fundo mais escuro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Sombra mais intensa ao rolar */
+  transition: all 0.4s ease-in-out; /* Transição suave para a sombra */
+}
+
+/* ✅ Título */
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ✅ Menu Desktop */
+.nav-desktop .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-desktop .nav-links li a {
+  color: #fd6532 ;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.nav-mobile .nav-links li a {
+  color: #fd6532 ;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-desktop .nav-links li a:hover {
+  color: #ffb400;  /* Amarelo-dourado */
+}
+
+
+/* ✅ Menu hamburguer */
+.menu-btn {
+  display: none; 
+  background: transparent;
+  border: none;
+  color: #fd6532;
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+}
+.container.hero{
+  width: 100% !important;
+  /* padding: 0 !important; */
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+/* ✅ Menu lateral */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -320px; /* Escondido por padrão */
+  width: 300px;
+  height: 100%;
+  background: #06131ea9;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  transition: right 0.4s ease-in-out;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentor{
+  background-color: #06131e;
+ display: flex; 
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav-menu.aberto {
+  right: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links li {
+  margin: 20px 0;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 22px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffb400; 
+}
+
+/* ✅ Banner */
+
+
+
+.banner-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ffb400;   /* Destaque em amarelo */
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  display: inline-block;
+  font-size: medium;
+  padding: 0px 7px !important;
+  color: white;
+  background: #ffb400;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #f6a700;
+}
+
+/* ✅ Container de marketing */
+.container-marketing {
+  padding: 80px 40px;
+  background: #f0f0f0;
+  color: #333;
+  text-align: center;
+}
+
+/* ✅ Grid de produtos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+/* ✅ Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Responsividade */
+@media (max-width: 768px) {
+  .header-container {
+   
+    text-align: center;
+  }
+ 
+  
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content{
+    font-size: medium;
+    width: auto !important;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece o fundo */
+    z-index: 5; /* Garante que o overlay fique acima do conteúdo */
+    pointer-events: all; /* Intercepta cliques, impedindo interação com o conteúdo */
+  }
+  
+  .banner {
+    height: 70vh;
+  }
+
+  .banner-content h1 {
+    font-size: 32px;
+  }
+
+  .container-marketing {
+    padding: 60px 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  button.fechar-btn{
+    background-color: transparent !important;
+    color:#fd6532 !important;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .nav-links a{
+    color: #fd6532 !important;
+  }
+  .nav-links a:active{
+    color:black !important;
+    background-color: #fd6532;
+    padding: 5px;
+    border-radius: 10%;
+  }
+  .menu-btn.aberto{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 28px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+  .logo img{
+    width: 100px;
+  }
+  .titulo{
+   font-size: 25px;
+  }
+  .hero{
+    height: 100vh;
+  }
+  section .container{
+    width: auto !important;
+    display: flex !important;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section .container h2{
+    width: auto !important;
+   
+  }
+  section .service-grid{
+    display: flex !important;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h2.services{
+    position: relative;
+    left: 0px !important;
+  
+    
+   
+  }
+ 
+
+}
+
+.logo{
+  position: relative;
+ 
+}
+.hero {
+  position: relative;
+  text-align: center;
+  background: url("./images/banner.png") no-repeat  ;
+  padding: 50px 0 !important;
+  line-height: 50px;
+  font-size: x-large;
+  width: 100% !important ;
+  z-index: 2;
+  background-size: cover;
+
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Ocupa toda a seção */
+  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+  backdrop-filter: blur(2px); /* Desfoque no fundo */
+  z-index: 0;
+  width: 100% !important;
+}
+
+footer {
+  background-color: #06131e;  
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+}
+
+/*testes*/
+/* Animação para fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplicando a animação ao h1 */
+.h1_p {
+  opacity: 0;  /* Começa invisível */
+  animation: fadeIn 1s ease-in-out forwards;
+  color: #fd6532;
+}
+.hero h1{
+  margin-top: 10px;
+}
+section button{
+  color: white;
+  background-color: #fd6532 !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow:1px 1px 1px  #0a0a0a;
+  margin-top: 40px;
+}
+.w-btn a{
+  padding: 0;
+  background-color: #fd6532;
+}
+
+.hero-content{
+  position: relative;
+ z-index: 3;
+  margin-top: 200px;
+  line-height: 70px;
+
+  width: 100%;
+  height: 400px;
+  /* box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.519); */
+}
+
+
+.services{
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 20px;
+}
+section{
+
+  width: 100%;
+}
+section .container{
+/* 
+  display: flex;
+  justify-content: space-around;
+  line-height: 40px;
+  box-shadow: #091a2a 2px 2px 2px 1px ;
+  margin-bottom: 20px;
+  min-height: 300px;
+
+  border-radius: 5px 5px 5px 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px !important;
+  
+}
+section .container:hover{
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+
+}
+/* section .container h2:hover{
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+  background-color: transparent;
+  
+
+} */
+section .container h2{
+
+ 
+  position: relative;
+  
+   /* width: 400px; */
+   padding: 20px 0 ;
+   position: relative;
+   left: 0;
+   top: 0;
+   background-color: #0c24396b;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100% ;
+   max-width:100% !important; 
+}
+/*
+h2.portfolio{
+  position: relative;
+  left: -80px;
+
+  
+} */
+.about p{
+  margin-left: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding:40px 0 ;
+
+}
+section .service-grid{
+  width: 100%;
+  display:flex;
+  /* flex-wrap: wrap;
+   */
+   align-items: center;
+   justify-content: center;
+
+}
+.services h2{
+  width: 100% !important;
+  width: 200vh !important;
+}
+section .service-item{
+  width: 340px;
+ box-shadow:  2px 2px 2px 2px #02070b;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 400px;
+  border-radius: 5%;
+
+}
+section .logo{
+  position: sticky;
+  left: 0;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+section .service-item:hover{
+ background-color: #133859;
+  transition: 0.3s ease-in-out;
+  color: #fd6532;
+}
+
+/* section .logo img{
+  width: 60px;
+}
+section .logo .img2{
+  width: 80px;
+  text-align: center;
+  margin-right: 10px;
+} */
+
+.portfolio-container {
+  width: 90%;
+  max-width: 1200px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  position: relative;
+  height: 450px;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-item {
+  position: absolute;
+  width: 320px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out, filter 0.5s ease-in-out;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  will-change: transform, opacity;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.portfolio-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.portfolio-item:hover::before {
+  opacity: 1;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Efeito de posição */
+.portfolio-item.active {
+  transform: translateX(0) scale(1) rotateY(0deg);
+  z-index: 4;
+  opacity: 1;
+}
+
+.portfolio-item.prev {
+  transform: translateX(-40%) scale(0.85) rotateY(-15deg);
+  opacity: 0.6;
+  filter: blur(3px);
+  z-index: 2;
+}
+
+.portfolio-item.next {
+  transform: translateX(40%) scale(0.85) rotateY(15deg);
+  opacity: 0.6;
+  filter: blur(3px);
+  z-index: 2;
+}
+
+/* Botões de Navegação */
+.portfolio-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.portfolio-nav button {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-nav button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+
+.prev-btn {
+  position: absolute;
+  left: 20px;
+}
+
+
+.next-btn {
+  position: absolute;
+  right: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 250px;
+    height: 180px;
+  }
+  
+  .portfolio-item.prev,
+  .portfolio-item.next {
+    transform: translateX(-30%) scale(0.8) rotateY(-10deg);
+  }
+
+  .next {
+    transform: translateX(30%) scale(0.8) rotateY(10deg);
+  }
+}
+
+button.absolute{
+  margin: 5px 50px;
+  padding-top: 5px;
+  
+}
+.relative{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.container.servicos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px !important;
+
+}
+.container.servicos h2{
+ 
+  position: relative;
+  
+   /* width: 400px; */
+   padding-top: 0 ;
+   position: relative;
+   left: 0;
+   top: 0;
+   background-color: #0c24396b;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width:100% !important; 
+   
+
+}
+h2,h1,p,.card{
+  overflow: hidden !important;
+}
+.servicos{
+  margin-top: 20vh;
+  background-color: #0a1d2e;
+
+}
+footer{
+  background-color: #040e16;
+  margin-top: 20px;
+}
+.portfolio{
+  margin-top: 100px;
+}
+.object-cover{
+  border-radius: 5%;
+}
+.footer-link{
+  color:#53646f !important;
+  font-style: none;
+ 
+}
+input,textarea {
+  background-color: #040e16 !important;
+  color: white !important;
+  width: 200px !important;
+
+}
+input::placeholder,textarea::placeholder{
+  
+  color: rgba(255, 255, 255, 0.479) !important
+};
+
