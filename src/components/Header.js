@@ -81,7 +81,7 @@ export default function Header() {
             <button className="fechar-btn" onClick={() => setAberto(false)}>✖</button>
             <ul className="nav-links">
               <li><Link to="/">Home</Link></li>
-              <li><Link to=";servicos">Serviços</Link></li>
+              <li><Link to="/servicos">Serviços</Link></li>
               <li><Link to="/portfolio">Portfólio</Link></li>
               <li><Link to="/contacts">Contactos</Link></li>
             </ul>
