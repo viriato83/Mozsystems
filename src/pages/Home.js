@@ -12,6 +12,7 @@ import img4 from "../images/Captura de ecrã 2025-04-04 165147.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const images = [img1, img2, img3, img4];
@@ -52,7 +53,7 @@ export default function Home() {
           <div className="hero-content ">
             <h1 className="h1_p">Conectando Empresas ao Futuro com Tecnologia</h1>
             <p>Criamos soluções digitais personalizadas para pequenas e médias empresas.</p>
-            <button className="cta-btn" ><a href="/contacts">Solicite um Orçamento</a></button>
+            <button className="cta-btn" ><Link to="/contacts">Solicite um Orçamento</Link></button>
           </div>
         </section>
 
