@@ -32,12 +32,12 @@ export default function Contact() {
       <Header />
       <Container>
         <motion.section
-          className="contact-page py-5 my-10"
+          className="contact-page "
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="container contactos">
+          <div className="container contactos " >
             <h2 className="text-center mb-4">Entre em Contato</h2>
             <p className="text-center mb-5">
               Tem um projeto em mente ou dúvidas? Estamos prontos para ajudar!
