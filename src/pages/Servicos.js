@@ -4,12 +4,20 @@ import Footer from "../components/Footer";
 import logo1 from "../images/web.png";
 import logo2 from "../images/syt.png";
 import logo3 from "../images/seo.png";
-
+import logo4 from "../images/seo.png"; // Nova logo para Assistência Técnica
+import logo5 from "../images/seo.png"; // Nova logo para Consultoria Tecnológica
+import { motion } from "framer-motion";
 export default function Servicos() {
   return (
     <>
       <Header />
       <Container>
+      <motion.section
+          className="contact-page "
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
         <section className="servicos mt-50">
           <div className="container servicos ">
             <h2 className="services">Nossos Serviços</h2>
@@ -50,10 +58,36 @@ export default function Servicos() {
                 </p>
                 <p><strong>Seu negócio seguro e visível no Google!</strong></p>
               </div>
+
+              <div className="service-item">
+                <div className="logo">
+                  <img src={logo4} width="60px" alt="Assistência Técnica" />
+                </div>
+                <h3 style={{ color: "#fd6532" }}>Assistência Técnica</h3>
+                <p>
+                  Oferecemos suporte técnico especializado para computadores, redes e sistemas, garantindo
+                  o bom funcionamento do seu ambiente digital.
+                </p>
+                <p><strong>Suporte remoto ou presencial conforme sua necessidade.</strong></p>
+              </div>
+
+              <div className="service-item">
+                <div className="logo">
+                  <img src={logo5} width="60px" alt="Consultoria Tecnológica" />
+                </div>
+                <h3 style={{ color: "#fd6532" }}>Consultoria Tecnológica</h3>
+                <p>
+                  Ajudamos sua empresa a tomar decisões tecnológicas estratégicas para crescer de forma
+                  eficiente e segura no mundo digital.
+                </p>
+                <p><strong>Orientação para otimizar recursos e melhorar processos.</strong></p>
+              </div>
             </div>
 
           </div>
+          <button className="btn static"> <a href="https://wa.me/+258873465311" target="blank" >Entre em Contacto</a> </button>
         </section>
+       </motion.section>
       </Container>
       <Footer />
     </>

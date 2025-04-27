@@ -48,6 +48,12 @@ export default function Home() {
     <>
       <Header />
       <Container>
+      <motion.section
+          className="contact-page "
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
         {/* Hero Section */}
         <section  className="container  hero">
           <div className="hero-content ">
@@ -62,9 +68,12 @@ export default function Home() {
           <div className="container">
             <h2>Sobre a MozSystems</h2>
             <p>
-              Somos especialistas no desenvolvimento de sistemas web e websites personalizados. Levamos o seu negócio
-              para o mundo digital, criando soluções sob medida que atendem às suas necessidades e impulsionam o seu
-              crescimento.
+                        Na MozSystems, transformamos tecnologia em crescimento real para pequenas e médias empresas.
+            Oferecemos soluções digitais personalizadas no desenvolvimento de softwares eficientes à criação de websites modernos.
+              além de suporte técnico completo para garantir o funcionamento contínuo dos seus sistemas.
+            Acreditamos que toda empresa, independente do tamanho, merece acesso a tecnologia de ponta, atendimento próximo e resultados concretos.
+
+            MozSystems: Soluções inteligentes, crescimento gara
             </p>
           </div>
         </section>
@@ -81,6 +90,7 @@ export default function Home() {
                 <h3 style={{ color: "#fd6532" }}>Desenvolvimento de Websites</h3>
                 <p>Criação de sites modernos, responsivos e otimizados para SEO.</p>
                 <p><strong>Ideal para empresas, lojas, portfólios e muito mais!</strong></p>
+                <button><Link style={{color:"white"}} to="/servicos">Saiba Mais</Link></button>
               </div>
               <div className="service-item">
                 <div className="logo">
@@ -89,6 +99,7 @@ export default function Home() {
                 <h3 style={{ color: "#fd6532" }}>Sistemas Web</h3>
                 <p>Automatize seu negócio com um sistema web personalizado.</p>
                 <p><strong>1 mês de teste grátis para você experimentar sem compromisso!</strong></p>
+                 <button><Link style={{color:"white"}} to="/servicos">Saiba Mais</Link></button>
               </div>
               <div className="service-item">
                 <div className="logo">
@@ -97,6 +108,7 @@ export default function Home() {
                 <h3 style={{ color: "#fd6532" }}>SEO e Segurança</h3>
                 <p>Melhore a visibilidade E a segurança da sua empresa online.</p>
                 <p><strong>Seu negócio seguro e visível no Google!</strong></p>
+                <button><Link style={{color:"white"}} to="/servicos">Saiba Mais</Link></button>
               </div>
             </div>
           </div>
@@ -137,7 +149,9 @@ export default function Home() {
              </div>
             </div>
           </div>
+         
         </section>
+        </motion.section>
       </Container>
       <Footer />
     </>

@@ -487,10 +487,12 @@ h2.portfolio{
 section .service-grid{
   width: 100%;
   display:flex;
-  /* flex-wrap: wrap;
-   */
+   flex-wrap: wrap;
+   
    align-items: center;
    justify-content: center;
+   gap: 1.5em;
+
 
 }
 .services h2{
@@ -508,6 +510,8 @@ section .service-item{
   flex-direction: column;
   min-height: 400px;
   border-radius: 5%;
+  float: left;
+   
 
 }
 section .logo{
@@ -679,6 +683,7 @@ section .logo .img2{
   .next {
     transform: translateX(30%) scale(0.8) rotateY(10deg);
   }
+ 
 }
 
 button.absolute{
@@ -754,4 +759,6 @@ input::placeholder,textarea::placeholder{
   
   color: rgba(255, 255, 255, 0.479) !important
 };
+
+
 

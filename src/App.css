@@ -5,3 +5,45 @@
 .cta-btn a{
     color:wheat;
 }
+.btn.static{
+  position: fixed !important;
+  left: 1250px !important;
+  top:550px !important;
+ z-index: 455;
+ border-radius: 15%;
+ 
+}
+.btn.static a{
+  color: white !important;
+}
+/* Responsividade */
+@media (max-width: 468px) {
+  
+  .btn.static{
+    position: fixed !important;
+    left: 300px !important;
+    top: 800px !important;
+   z-index: 455;
+   
+  }
+}
+@media (max-width: 768px) {
+  
+  .btn.static{
+    position: fixed !important;
+    left: 250px !important;
+    top: 540px !important;
+   z-index: 455;
+   
+  }
+}
+@media (max-width: 968px) {
+  
+  .btn.static{
+    position: fixed !important;
+    left: 550px !important;
+    top: 540px !important;
+   z-index: 455;
+   
+  }
+}

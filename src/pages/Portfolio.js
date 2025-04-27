@@ -43,6 +43,12 @@ export default function Portfolio() {
     <>
       <Header />
       <Container>
+      <motion.section
+          className="contact-page "
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
         <section className="portfolio mt-10">
           <div className="container mt-10">
             <h2 className="portfolio text-center">Nosso Portfólio</h2>
@@ -79,6 +85,7 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
+        </motion.section>
       </Container>
       <Footer />
     </>

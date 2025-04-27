@@ -67,6 +67,7 @@ export default function Header() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/servicos">Serviços</Link></li>
             <li><Link to="/portfolio">Portfólio</Link></li>
+            <li><Link to="/about">Sobre Nós</Link></li>
             <li><Link to="/contacts">Contactos</Link></li>
           </ul>
         </nav>
@@ -83,6 +84,7 @@ export default function Header() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/servicos">Serviços</Link></li>
               <li><Link to="/portfolio">Portfólio</Link></li>
+              <li><Link to="/about">Sobre Nós</Link></li>
               <li><Link to="/contacts">Contactos</Link></li>
             </ul>
           </nav>
