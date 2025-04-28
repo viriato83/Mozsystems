@@ -72,8 +72,8 @@ export default function Home() {
             Oferecemos soluções digitais personalizadas no desenvolvimento de softwares eficientes à criação de websites modernos.
               além de suporte técnico completo para garantir o funcionamento contínuo dos seus sistemas.
             Acreditamos que toda empresa, independente do tamanho, merece acesso a tecnologia de ponta, atendimento próximo e resultados concretos.
-
-            MozSystems: Soluções inteligentes, crescimento gara
+           <br/>
+            
             </p>
           </div>
         </section>
