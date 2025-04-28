@@ -21,7 +21,7 @@ export default function About() {
         <section className="servicos mt-50">
           <div className="container sobre ">
             <h2 className="services" >Sobre Nós</h2>
-              <p className=" mt-2 " style={{listStyle:"none",maxWidth:"850px",textAlign:"center"}}>    Na MozSystems, transformamos tecnologia em crescimento real para pequenas e médias empresas. Oferecemos soluções digitais personalizadas no desenvolvimento de softwares eficientes à criação de websites modernos. além de suporte técnico completo para garantir o funcionamento contínuo dos seus sistemas. Acreditamos que toda empresa, independente do tamanho, merece acesso a tecnologia de ponta, atendimento próximo e resultados concretos. MozSystems: Soluções inteligentes, crescimento gara</p>
+              <p className=" mt-2 " style={{listStyle:"none",maxWidth:"850px",textAlign:"center"}}>    Na MozSystems, transformamos tecnologia em crescimento real para pequenas e médias empresas. Oferecemos soluções digitais personalizadas no desenvolvimento de softwares eficientes à criação de websites modernos. além de suporte técnico completo para garantir o funcionamento contínuo dos seus sistemas. Acreditamos que toda empresa, independente do tamanho, merece acesso a tecnologia de ponta, atendimento próximo e resultados concretos.</p>
             <h3>
             Missão 
             </h3>
