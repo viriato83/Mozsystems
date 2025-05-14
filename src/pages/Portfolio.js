@@ -89,7 +89,7 @@ export default function Portfolio() {
           <section class=" mt-5  portfolio_proposta">
           
             <p>
-              Este sistema foi desenvolvido com foco em automatizar e otimizar o controle de mercadorias, vendas e perdas, atendendo especialmente às necessidades de pequenas e médias empresas.
+              Estes sistemas foram desenvolvidos com foco em automatizar e otimizar o controle de mercadorias, vendas e perdas, atendendo especialmente às necessidades de pequenas e médias empresas.
             </p>
 
             <h3>🔧 Funcionalidades principais:</h3>

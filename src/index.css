@@ -410,7 +410,9 @@ section button{
   height: 400px;
   /* box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.519); */
 }
-
+.hero-content p,h1,button{
+  margin-top: -20px;
+}
 
 .services{
   display: flex;
@@ -684,6 +686,32 @@ section .logo .img2{
     transform: translateX(30%) scale(0.8) rotateY(10deg);
   }
  
+  .hero-content h1,p,button{
+    margin-top: -80px;
+   
+  }
+  .hero-content p {
+    margin-bottom: 8px; /* reduz o espaçamento entre os parágrafos */
+    line-height: 2.5; /* reduz o espaçamento entre as linhas */
+  }
+
+  .cta-btn {
+    margin-top: 10px; /* menos espaço acima do botão */
+    margin-bottom: 10px; /* menos espaço abaixo, se necessário */
+  }
+
+  .hero-content strong {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .hero-content {
+    padding: 10px; /* reduz preenchimento geral se quiser compactar */
+  }
+  .portfolio_proposta p{
+    max-width: 300px;
+    text-align: center;
+  }
 }
 
 button.absolute{
