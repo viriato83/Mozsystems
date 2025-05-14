@@ -59,7 +59,9 @@ export default function Home() {
           <div className="hero-content ">
             <h1 className="h1_p">Conectando Empresas ao Futuro com Tecnologia</h1>
             <p>Criamos soluções digitais personalizadas para pequenas e médias empresas.</p>
+            <p>Oferecemos soluções digitais personalizadas no desenvolvimento de softwares eficientes à criação de websites modernos.</p>
             <button className="cta-btn" ><Link to="/contacts">Solicite um Orçamento</Link></button>
+            <p><strong>1 mês de teste grátis para softwares, experimente sem compromisso!</strong></p>
           </div>
         </section>
 

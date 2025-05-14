@@ -53,7 +53,9 @@ export default function Portfolio() {
           <div className="container mt-10">
             <h2 className="portfolio text-center">Nosso Portfólio</h2>
             <p className="mb-6 text-center">Alguns projetos recentes desenvolvidos para nossos clientes.</p>
-            <div className="relative w-75 max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg h-80">
+            <h3>💻 Sistemas de Gestão de Estoque e Vendas</h3>
+            <div 
+            className="relative w-75 max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg h-80">
               <AnimatePresence custom={direction} mode="wait">
                 <motion.img
                   key={index}
@@ -84,6 +86,45 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+          <section class=" mt-5  portfolio_proposta">
+          
+            <p>
+              Este sistema foi desenvolvido com foco em automatizar e otimizar o controle de mercadorias, vendas e perdas, atendendo especialmente às necessidades de pequenas e médias empresas.
+            </p>
+
+            <h3>🔧 Funcionalidades principais:</h3>
+            <ul>
+              <li>
+                <strong>📦 Cadastro de Mercadorias:</strong> Registro completo de produtos com tipo, valor, data de entrada e estoque relacionado.
+              </li>
+              <li>
+                <strong>👤 Gestão de Utilizadores:</strong> Módulo de cadastro e autenticação com controle de permissões por perfil, usando segurança via <code>JWT</code> e senhas criptografadas com <code>BCrypt</code>.
+              </li>
+              <li>
+                <strong>⚠️ Registro de Perdas (Mortalidades):</strong> Controle detalhado de perdas no estoque, com rastreabilidade e análise de impacto.
+              </li>
+              <li>
+                <strong>💰 Gestão de Vendas:</strong> Cadastro de vendas, associação de mercadorias e geração de relatórios personalizados por período.
+              </li>
+              <li>
+                <strong>📊 Relatórios de Entradas e Saídas:</strong> Relatórios detalhados com filtros por data, tipo de mercadoria e estoque.
+              </li>
+              <li>
+                <strong>📦 Relatório de Stock Atualizado:</strong> Visão em tempo real dos níveis de estoque, com base nas movimentações.
+              </li>
+              <li>
+                <strong>📈 Dashboard Informativo:</strong> Painel interativo com indicadores-chave (total de vendas, perdas, entradas, saídas, etc.).
+              </li>
+              <li>
+                <strong>📉 Gráficos de Desempenho:</strong> Visualização clara e rápida com gráficos de pizza e barras para análise estratégica.
+              </li>
+              <li>
+                <strong>📤 Exportação para Excel:</strong> Permite exportar dados filtrados para arquivos <code>.xlsx</code>, facilitando análises externas e relatórios administrativos.
+              </li>
+            </ul>
+          </section>
+        <button className="btn static"> <a href="https://wa.me/+258873465311" target="blank" >Entre em Contacto</a> </button>
+       
         </section>
         </motion.section>
       </Container>

@@ -33,6 +33,7 @@ export default function Servicos() {
                   para engajar seus clientes desde o primeiro clique.
                 </p>
                 <p><strong>Ideal para empresas, lojas, portfólios e muito mais!</strong></p>
+                <p><strong>Controle o seu negócio a distância!</strong></p>
               </div>
 
               <div className="service-item">

@@ -50,3 +50,11 @@
 .container.contactos{
   margin-top: 190px !important;
 }
+.portfolio_proposta{
+  max-width: 800px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  margin: auto;
+}
